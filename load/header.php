@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <?php
 	$ssyear = "2015";
+	$ssdates = "3 & 4 October"
 ?>
 <html>
 <head>
