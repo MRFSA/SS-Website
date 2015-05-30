@@ -3,11 +3,11 @@
 ?>
 
 <div class="biglinks">
-	<a href="#">Nominations</a>
-	<a href="#">Competition Rules</a>
-	<a href="#">Sponsors</a>
-	<a href="#">Where Is It?</a>
-	<a href="#">Contact Us</a>
+	<a href="nominations.php">Nominations</a>
+	<a href="rules.php">Competition Rules</a>
+	<a href="sponsors.php">Sponsors</a>
+	<a href="location.php">Where Is It?</a>
+	<a href="contact.php">Contact Us</a>
 </div>
 
 <?php

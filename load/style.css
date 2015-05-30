@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
 @font-face {
     font-family: 'SSV';
     src: url('../fonts/mrfsa_ssv-webfont.eot');
@@ -13,16 +15,73 @@
 body {
 	/*background-image:url('../images/halftone.png');*/
 	background-image:url('../images/concrete_seamless.png');
+	background-color:#dddddb;
 	padding:150px 0 0 0;
-	font-family: Arial,
-	
+	margin:0;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight:300;
+	text-align:center;
+}
+
+strong {
+	font-weight:700;
 }
 
 h1 {
 	font-family: 'SSV';
 	font-size:60px;
+	margin:0;
 	text-align:center;
+	font-weight:normal;
 }
+
+p {
+	margin:0 0 30px 0;
+}
+
+/* footer stuff */
+
+#footer {
+	background-color:#333;
+	text-align:center;
+	font-size:10px;
+	background-image:url('../images/pinstriped_suit.png');
+	color:#dddddb;
+	padding:6px;
+	margin: 20px 0 0 0;
+}
+#footer a {
+	text-decoration:none;
+}
+
+#footer a:link, #footer a:visited {
+	color:#fff;
+}
+
+#footer a:hover, #footer a:active {
+	color:#363636;
+	background-color:#fff;
+}
+
+#footer a.jlx:link, #footer a.jlx:visited {
+	color:#d74598;
+}
+
+#footer a.jlx:hover, #footer a.jlx:active {
+	color:#363636;
+	background-color:#d74598;
+}
+
+#footer a.mrfsa:link, #footer a.mrfsa:visited {
+	color:#d25727;
+}
+
+#footer a.mrfsa:hover, #footer a.mrfsa:active {
+	color:#363636;
+	background-color:#d25727;
+}
+
+/* logos */
 
 a.logo {
 	display:block;
@@ -46,18 +105,23 @@ a#mrfsa-cornerlogo {
 	right:0px;
 }
 
+/* The Big Links on the Home Page */
+
 div.biglinks {
 	margin:0;
+	text-align:center;
 }
 
 div.biglinks a {
-	display:block;
 	font-family: 'SSV';
 	font-size:60px;
 	text-align:center;
 	text-decoration:none;
 	padding:15px 10px 0 10px;
+	line-height: 80px;
 }
+
+div.biglinks a:after {content:"\A";white-space:pre;}
 
 div.biglinks a:nth-child(1):link, div.biglinks a:nth-child(1):visited
 {
@@ -83,6 +147,10 @@ div.biglinks a:nth-child(5):link, div.biglinks a:nth-child(5):visited
 {
 	color:#0B99D6;
 }
+
+/*div.biglinks a:hover, div.biglinks a:active {
+	background-image:url('../images/pinstriped_suit.png')
+}*/
 
 div.biglinks a:nth-child(1):hover, div.biglinks a:nth-child(1):active
 {
