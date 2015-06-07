@@ -9,8 +9,6 @@
 @lightgray:	#dddddb;
 @darkgray: 	#363636;
 
-
-
 @font-face {
     font-family: 'SSV';
     src: url('../fonts/mrfsa_ssv-webfont.eot');
@@ -53,28 +51,42 @@ p {
 }
 
 /*define color classes */
-.purple		{color:@purple;}
-.red		{color:@red;}
-.orange		{color:@orange;}
-.green		{color:@green;}
-.blue		{color:@blue;}
+.col-purple		{color:@purple;}
+.col-red		{color:@red;}
+.col-orange		{color:@orange;}
+.col-green		{color:@green;}
+.col-blue		{color:@blue;}
 .bg-purple	{background-color:@purple;}
 .bg-red		{background-color:@red;}
 .bg-orange	{background-color:@orange;}
 .bg-green	{background-color:@green;}
 .bg-blue	{background-color:@blue;}
+.bg-white	{background-color:#ffffff;}
 
 /* Normal Links */
-a:link, a:visited {
-	background-color:#000000;
-	color:@lightgray;
-	text-decoration:none;
-	padding:0 1px 0 1px;
-}
-
-a:hover, a:active {
-	background-color:#0b99d6;
-	color:#dddddb;
+a {
+	&:link, &:visited {
+		font-weight:400;
+		background-color:@darkgray;
+		color:@lightgray;
+		text-decoration:none;
+		padding:0 2px 0 2px;
+		&.purple 	{.bg-purple();}
+		&.red 		{.bg-red();}
+		&.orange 	{.bg-orange();}
+		&.green 	{.bg-green();}
+		&.blue 		{.bg-blue();}
+	}
+	
+	&:hover, &:active {
+		background-color:#ffffff;
+		color:@darkgray;
+		&.purple 	{.col-purple();.bg-white();}
+		&.red 		{.col-red();.bg-white();}
+		&.orange 	{.col-orange();.bg-white();}
+		&.green 	{.col-green();.bg-white();}
+		&.blue 		{.col-blue();.bg-white();}
+	}
 }
 
 /* footer stuff */
@@ -137,7 +149,8 @@ a#ss-cornerlogo {
 	width:414px;
 	background-image:url('../images/SSV-cornerlogo.png');
 	left:0px;
-	background-color:transparent;
+	background-color:transparent !important;
+	z-index: -98;
 }
 
 a#mrfsa-cornerlogo {
@@ -145,7 +158,8 @@ a#mrfsa-cornerlogo {
 	width:143px;
 	background-image:url('../images/MRFSA-cornerlogo.png');
 	right:0px;
-	background-color:transparent;
+	background-color:transparent !important;
+	z-index: -99;
 }
 
 /* The Big Links on the Home Page */
@@ -155,6 +169,7 @@ div.biglinks {
 	text-align:center;
 	& a {
 		font-family: 'SSV';
+		font-weight:normal;
 		font-size:60px;
 		text-align:center;
 		text-decoration:none;
@@ -175,13 +190,4 @@ div.biglinks {
 		&:nth-child(5):hover, &:nth-child(5):active {background-color:@blue;}
 		&:hover, &:active {color:#fff !important;}
 	}
-}
-
-/* Color Regular Links */
-a.purple:link, a.purple:active {
-	background-color: @purple;
-}
-
-a.purple:hover, a.purple:active {
-
 }

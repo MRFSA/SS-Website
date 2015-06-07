@@ -1,8 +1,9 @@
 <?php
 	require 'load/header.php';
+	$pagecolor = "blue";
 ?>
 
-<h1 class="color-blue">Contact Us</h1>
+<h1 class="<?php echo "col-$pagecolor"; ?>">Contact Us</h1>
 <p>Body Text</p>
 
 <?php

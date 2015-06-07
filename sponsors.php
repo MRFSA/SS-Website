@@ -1,8 +1,9 @@
 <?php
 	require 'load/header.php';
+	$pagecolor = "orange";
 ?>
 
-<h1 class="color-orange">2015 Sponsors</h1>
+<h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo "$ssyear"; ?> Sponsors</h1>
 <p>Body Text</p>
 
 <?php
