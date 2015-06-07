@@ -1,6 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
-@purple: #6D3D96;
+@purple: 	#6d3d96;
+@red: 		#c11e54;
+@orange: 	#d25727;
+@green: 	#8eb73e;
+@blue: 		#0b99d6;
+@pink: 		#d74598;
+@lightgray:	#dddddb;
+@darkgray: 	#363636;
+
+
 
 @font-face {
     font-family: 'SSV';
@@ -17,7 +26,7 @@
 body {
 	/*background-image:url('../images/halftone.png');*/
 	background-image:url('../images/concrete_seamless.png');
-	background-color:#dddddb;
+	background-color:@lightgray;
 	padding:150px 0 0 0;
 	margin:0;
 	font-family: 'Roboto Slab', sans-serif;
@@ -43,10 +52,22 @@ p {
 	margin:0 0 30px 0;
 }
 
+/*define color classes */
+.purple		{color:@purple;}
+.red		{color:@red;}
+.orange		{color:@orange;}
+.green		{color:@green;}
+.blue		{color:@blue;}
+.bg-purple	{background-color:@purple;}
+.bg-red		{background-color:@red;}
+.bg-orange	{background-color:@orange;}
+.bg-green	{background-color:@green;}
+.bg-blue	{background-color:@blue;}
+
 /* Normal Links */
 a:link, a:visited {
 	background-color:#000000;
-	color:#dddddb;
+	color:@lightgray;
 	text-decoration:none;
 	padding:0 1px 0 1px;
 }
@@ -66,37 +87,39 @@ a:hover, a:active {
 	color:#dddddb;
 	padding:6px;
 	margin: 20px 0 0 0;
-}
-#footer a {
-	text-decoration:none;
+	
+	& a {
+		text-decoration:none;
+		
+		&:link, &:visited {
+			color:#fff;
+		}
+		
+		&:hover, &:active {
+			color:@darkgray;
+			background-color:#fff;
+		}
+		
+		&.jlx:link, &.jlx:visited{
+			color:@pink;
+		}
+		
+		&.jlx:hover, &.jlx:active {
+			color:@darkgray;
+			background-color:@pink;
+		}
+		
+		&.mrfsa:link, &.mrfsa:visited {
+			color:@orange;
+		}
+		
+		&.mrfsa:hover, &.mrfsa:active {
+			color:@darkgray;
+			background-color:@orange;
+		}
+	}
 }
 
-#footer a:link, #footer a:visited {
-	color:#fff;
-}
-
-#footer a:hover, #footer a:active {
-	color:#363636;
-	background-color:#fff;
-}
-
-#footer a.jlx:link, #footer a.jlx:visited {
-	color:#d74598;
-}
-
-#footer a.jlx:hover, #footer a.jlx:active {
-	color:#363636;
-	background-color:#d74598;
-}
-
-#footer a.mrfsa:link, #footer a.mrfsa:visited {
-	color:#d25727;
-}
-
-#footer a.mrfsa:hover, #footer a.mrfsa:active {
-	color:#363636;
-	background-color:#d25727;
-}
 
 /* logos */
 
@@ -130,77 +153,28 @@ a#mrfsa-cornerlogo {
 div.biglinks {
 	margin:0;
 	text-align:center;
-}
-
-div.biglinks a {
-	font-family: 'SSV';
-	font-size:60px;
-	text-align:center;
-	text-decoration:none;
-	padding:15px 10px 0 10px;
-	line-height: 80px;
-	background-color:transparent;
-}
-
-div.biglinks a:after {content:"\A";white-space:pre;}
-
-div.biglinks a:nth-child(1):link, div.biglinks a:nth-child(1):visited, .color-purple
-{
-	color:@purple;
-}
-
-div.biglinks a:nth-child(2):link, div.biglinks a:nth-child(2):visited, .color-red
-{
-	color:#C11E54;
-}
-
-div.biglinks a:nth-child(3):link, div.biglinks a:nth-child(3):visited, .color-orange
-{
-	color:#D25727;
-}
-
-div.biglinks a:nth-child(4):link, div.biglinks a:nth-child(4):visited, .color-green
-{
-	color:#8EB73E;
-}
-
-div.biglinks a:nth-child(5):link, div.biglinks a:nth-child(5):visited, .color-blue
-{
-	color:#0B99D6;
-}
-
-/*div.biglinks a:hover, div.biglinks a:active {
-	background-image:url('../images/pinstriped_suit.png')
-}*/
-
-div.biglinks a:nth-child(1):hover, div.biglinks a:nth-child(1):active, .bg-purple
-{
-	background-color:@purple;
-}
-
-div.biglinks a:nth-child(2):hover, div.biglinks a:nth-child(2):active, .bg-red
-{
-	background-color:#C11E54;
-}
-
-div.biglinks a:nth-child(3):hover, div.biglinks a:nth-child(3):active, .bg-orange
-{
-	background-color:#D25727;
-}
-
-div.biglinks a:nth-child(4):hover, div.biglinks a:nth-child(4):active, .bg-green
-{
-	background-color:#8EB73E;
-}
-
-div.biglinks a:nth-child(5):hover, div.biglinks a:nth-child(5):active, .bg-blue
-{
-	background-color:#0B99D6;
-}
-
-div.biglinks a:hover, div.biglinks a:active
-{
-	color:#fff !important;
+	& a {
+		font-family: 'SSV';
+		font-size:60px;
+		text-align:center;
+		text-decoration:none;
+		padding:15px 10px 0 10px;
+		line-height: 80px;
+		background-color:transparent;
+		
+		&:after {content:"\A";white-space:pre;}
+		&:nth-child(1):link, &:nth-child(1):visited {color:@purple;}
+		&:nth-child(2):link, &:nth-child(2):visited {color:@red;}
+		&:nth-child(3):link, &:nth-child(3):visited {color:@orange;}
+		&:nth-child(4):link, &:nth-child(4):visited {color:@green;}
+		&:nth-child(5):link, &:nth-child(5):visited {color:@blue;}
+		&:nth-child(1):hover, &:nth-child(1):active {background-color:@purple;}
+		&:nth-child(2):hover, &:nth-child(2):active {background-color:@red;}
+		&:nth-child(3):hover, &:nth-child(3):active {background-color:@orange;}
+		&:nth-child(4):hover, &:nth-child(4):active {background-color:@green;}
+		&:nth-child(5):hover, &:nth-child(5):active {background-color:@blue;}
+		&:hover, &:active {color:#fff !important;}
+	}
 }
 
 /* Color Regular Links */
