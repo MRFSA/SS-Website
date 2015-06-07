@@ -14,7 +14,8 @@
 			}
 		});
 	</script>
-	<link rel="stylesheet" type="text/css" href="load/style.css">
+	<link rel="stylesheet/less" type="text/css" href="load/style.less">
+	<script src="load/less.min.js"></script>
 </head>
 <body>
 
