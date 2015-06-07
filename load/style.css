@@ -27,6 +27,8 @@ strong {
 	font-weight:700;
 }
 
+
+
 h1 {
 	font-family: 'SSV';
 	font-size:60px;
@@ -37,6 +39,19 @@ h1 {
 
 p {
 	margin:0 0 30px 0;
+}
+
+/* Normal Links */
+a:link, a:visited {
+	background-color:#000000;
+	color:#dddddb;
+	text-decoration:none;
+	padding:0 1px 0 1px;
+}
+
+a:hover, a:active {
+	background-color:#0b99d6;
+	color:#dddddb;
 }
 
 /* footer stuff */
@@ -89,6 +104,7 @@ a.logo {
 	color:transparent;
 	font-size:0;
 	position:fixed;
+	padding:0;
 }
 
 a#ss-cornerlogo {
@@ -96,6 +112,7 @@ a#ss-cornerlogo {
 	width:414px;
 	background-image:url('../images/SSV-cornerlogo.png');
 	left:0px;
+	background-color:transparent;
 }
 
 a#mrfsa-cornerlogo {
@@ -103,6 +120,7 @@ a#mrfsa-cornerlogo {
 	width:143px;
 	background-image:url('../images/MRFSA-cornerlogo.png');
 	right:0px;
+	background-color:transparent;
 }
 
 /* The Big Links on the Home Page */
@@ -119,31 +137,32 @@ div.biglinks a {
 	text-decoration:none;
 	padding:15px 10px 0 10px;
 	line-height: 80px;
+	background-color:transparent;
 }
 
 div.biglinks a:after {content:"\A";white-space:pre;}
 
-div.biglinks a:nth-child(1):link, div.biglinks a:nth-child(1):visited
+div.biglinks a:nth-child(1):link, div.biglinks a:nth-child(1):visited, .color-purple
 {
 	color:#6D3D96;
 }
 
-div.biglinks a:nth-child(2):link, div.biglinks a:nth-child(2):visited
+div.biglinks a:nth-child(2):link, div.biglinks a:nth-child(2):visited, .color-red
 {
 	color:#C11E54;
 }
 
-div.biglinks a:nth-child(3):link, div.biglinks a:nth-child(3):visited
+div.biglinks a:nth-child(3):link, div.biglinks a:nth-child(3):visited, .color-orange
 {
 	color:#D25727;
 }
 
-div.biglinks a:nth-child(4):link, div.biglinks a:nth-child(4):visited
+div.biglinks a:nth-child(4):link, div.biglinks a:nth-child(4):visited, .color-green
 {
 	color:#8EB73E;
 }
 
-div.biglinks a:nth-child(5):link, div.biglinks a:nth-child(5):visited
+div.biglinks a:nth-child(5):link, div.biglinks a:nth-child(5):visited, .color-blue
 {
 	color:#0B99D6;
 }
@@ -152,27 +171,27 @@ div.biglinks a:nth-child(5):link, div.biglinks a:nth-child(5):visited
 	background-image:url('../images/pinstriped_suit.png')
 }*/
 
-div.biglinks a:nth-child(1):hover, div.biglinks a:nth-child(1):active
+div.biglinks a:nth-child(1):hover, div.biglinks a:nth-child(1):active, .bg-purple
 {
 	background-color:#6D3D96;
 }
 
-div.biglinks a:nth-child(2):hover, div.biglinks a:nth-child(2):active
+div.biglinks a:nth-child(2):hover, div.biglinks a:nth-child(2):active, .bg-red
 {
 	background-color:#C11E54;
 }
 
-div.biglinks a:nth-child(3):hover, div.biglinks a:nth-child(3):active
+div.biglinks a:nth-child(3):hover, div.biglinks a:nth-child(3):active, .bg-orange
 {
 	background-color:#D25727;
 }
 
-div.biglinks a:nth-child(4):hover, div.biglinks a:nth-child(4):active
+div.biglinks a:nth-child(4):hover, div.biglinks a:nth-child(4):active, .bg-green
 {
 	background-color:#8EB73E;
 }
 
-div.biglinks a:nth-child(5):hover, div.biglinks a:nth-child(5):active
+div.biglinks a:nth-child(5):hover, div.biglinks a:nth-child(5):active, .bg-blue
 {
 	background-color:#0B99D6;
 }
@@ -180,4 +199,13 @@ div.biglinks a:nth-child(5):hover, div.biglinks a:nth-child(5):active
 div.biglinks a:hover, div.biglinks a:active
 {
 	color:#fff !important;
+}
+
+/* Color Regular Links */
+a.purple:link, a.purple:active {
+	background-color:
+}
+
+a.purple:hover, a.purple:active {
+
 }

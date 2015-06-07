@@ -2,7 +2,7 @@
 	require 'load/header.php';
 ?>
 
-<h1>How to find us</h1>
+<h1 class="color-green">How to find us</h1>
 <p>Body Text</p>
 
 <?php
