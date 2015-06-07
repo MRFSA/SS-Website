@@ -4,5 +4,9 @@
 	PO Box 302, Blackwater Q | 	ABN: 12 235 690 563<br />
 
 </div>
+<script>
+	var d = document.getElementById("headerbox");
+	d.className = d.className + "<?php echo "bg-$pagecolor"; ?>";
+</script>
 </body>
 </html>

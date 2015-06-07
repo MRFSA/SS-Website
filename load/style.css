@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
+@purple: #6D3D96;
+
 @font-face {
     font-family: 'SSV';
     src: url('../fonts/mrfsa_ssv-webfont.eot');
@@ -144,7 +146,7 @@ div.biglinks a:after {content:"\A";white-space:pre;}
 
 div.biglinks a:nth-child(1):link, div.biglinks a:nth-child(1):visited, .color-purple
 {
-	color:#6D3D96;
+	color:@purple;
 }
 
 div.biglinks a:nth-child(2):link, div.biglinks a:nth-child(2):visited, .color-red
@@ -173,7 +175,7 @@ div.biglinks a:nth-child(5):link, div.biglinks a:nth-child(5):visited, .color-bl
 
 div.biglinks a:nth-child(1):hover, div.biglinks a:nth-child(1):active, .bg-purple
 {
-	background-color:#6D3D96;
+	background-color:@purple;
 }
 
 div.biglinks a:nth-child(2):hover, div.biglinks a:nth-child(2):active, .bg-red
