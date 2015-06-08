@@ -1,9 +1,10 @@
 <?php
+	$pagename = "Nominations";
 	require 'load/header.php';
 	$pagecolor = "purple";
 ?>
 
-<h1 class="<?php echo "col-$pagecolor"; ?>">Nominations</h1>
+<h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo $pagename; ?></h1>
 <p><a href="/files/nomination<?php echo "$ssyear"; ?>.pdf" class="<?php echo "$pagecolor"; ?>">Download PDF Nomination Form</a></p>
 <p>By nominating for the Saratoga Spectacular 2015 you agree to follow the <a href="rules.php" class="red">rules of the competition</a>
 <h2>Ready to Nominate?</h2>

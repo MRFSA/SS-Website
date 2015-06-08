@@ -1,4 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+//Saratoga Spectacular 2015 Online
+// (c) 2015 Jason Alexander Hill
+// SSV
+
+@import url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700');
 
 @purple: 	#6d3d96;
 @red: 		#c11e54;
@@ -35,8 +39,6 @@ body {
 strong {
 	font-weight:700;
 }
-
-
 
 h1 {
 	font-family: 'SSV';
@@ -170,6 +172,63 @@ a#mrfsa-cornerlogo {
 	display:none;
 }
 
+/* The Big Links on the Home Page */
+
+div.biglinks {
+	margin:0;
+	text-align:center;
+	& a {
+		font-family: 'SSV';
+		font-weight:normal;
+		font-size:60px;
+		text-align:center;
+		text-decoration:none;
+		padding:15px 10px 0 10px;
+		line-height: 80px;
+		background-color:transparent;
+		
+		&:after {content:"\A";white-space:pre;}
+		&:nth-child(1):link, &:nth-child(1):visited {color:@purple;}
+		&:nth-child(2):link, &:nth-child(2):visited {color:@red;}
+		&:nth-child(3):link, &:nth-child(3):visited {color:@orange;}
+		&:nth-child(4):link, &:nth-child(4):visited {color:@green;}
+		&:nth-child(5):link, &:nth-child(5):visited {color:@blue;}
+		&:nth-child(1):hover, &:nth-child(1):active {background-color:@purple;}
+		&:nth-child(2):hover, &:nth-child(2):active {background-color:@red;}
+		&:nth-child(3):hover, &:nth-child(3):active {background-color:@orange;}
+		&:nth-child(4):hover, &:nth-child(4):active {background-color:@green;}
+		&:nth-child(5):hover, &:nth-child(5):active {background-color:@blue;}
+		&:hover, &:active {color:#fff !important;}
+	}
+}
+
+/* Numbered Lists */
+ol.rules {text-align:left;}
+ol { counter-reset: item }
+li { 
+	display: block;
+	&:before { content: counters(item, ".") ". "; counter-increment: item; font-weight:700; }
+}
+ol.rules span {
+font-weight:400;
+}
+
+/*Responsive Design */
+@media only print {
+	body {
+		font-size:11px;
+		padding:0;
+	}
+	
+	#ss-cornerlogo, #mrfsa-cornerlogo {
+		display:none;
+	}
+	
+	.hideinprint {
+		display:none;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	body {
 		padding:140px 0 0 0;
@@ -185,6 +244,7 @@ a#mrfsa-cornerlogo {
 @media only screen and (max-width:500px) {
 	body {
 		padding:90px 0 0 0;
+		font-size:14px;
 	}
 	
 	a#ss-cornerlogo, a#mrfsa-cornerlogo {
@@ -230,32 +290,17 @@ a#mrfsa-cornerlogo {
 	}
 }
 
-/* The Big Links on the Home Page */
-
-div.biglinks {
-	margin:0;
-	text-align:center;
-	& a {
-		font-family: 'SSV';
-		font-weight:normal;
-		font-size:60px;
-		text-align:center;
-		text-decoration:none;
-		padding:15px 10px 0 10px;
-		line-height: 80px;
-		background-color:transparent;
-		
-		&:after {content:"\A";white-space:pre;}
-		&:nth-child(1):link, &:nth-child(1):visited {color:@purple;}
-		&:nth-child(2):link, &:nth-child(2):visited {color:@red;}
-		&:nth-child(3):link, &:nth-child(3):visited {color:@orange;}
-		&:nth-child(4):link, &:nth-child(4):visited {color:@green;}
-		&:nth-child(5):link, &:nth-child(5):visited {color:@blue;}
-		&:nth-child(1):hover, &:nth-child(1):active {background-color:@purple;}
-		&:nth-child(2):hover, &:nth-child(2):active {background-color:@red;}
-		&:nth-child(3):hover, &:nth-child(3):active {background-color:@orange;}
-		&:nth-child(4):hover, &:nth-child(4):active {background-color:@green;}
-		&:nth-child(5):hover, &:nth-child(5):active {background-color:@blue;}
-		&:hover, &:active {color:#fff !important;}
+@media only screen and (max-width:370px) {
+	#headerbox a.ss {
+		font-size:22px;
 	}
+	
+	div.biglinks a {
+		font-size:45px;
+	}
+	
+	h1 {
+		font-size:50px;
+	}
+
 }
