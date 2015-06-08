@@ -27,6 +27,7 @@
 
 body {
 	/*background-image:url('../images/halftone.png');*/
+	color:@darkgray;
 	background-image:url('../images/concrete_seamless.png');
 	background-color:@lightgray;
 	padding:200px 0 0 0;
@@ -225,7 +226,7 @@ ul {list-style-type: disc;}
 	background-color:#eee;
 	background-size:170px;
 	background-repeat:no-repeat;
-	background-position: 3px 50% contain;
+	background-position: 0 50%;
 }
 
 div.sponsor-lv1 {
@@ -261,7 +262,7 @@ div.sponsor-lv3 {
 	}
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:500px), screen and (-webkit-min-device-pixel-ratio: 2) {
 	body {
 		padding:90px 0 0 0;
 		font-size:14px;
@@ -317,6 +318,36 @@ div.sponsor-lv3 {
 	
 	div.sponsor-lv3 {
 		font-size:13px;
+	}
+}
+
+/* Make it way better on iphones and shit */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		padding: 150px 0 0 0;
+	}
+	
+	h1 {
+		font-size:1000%;
+	}
+	
+	div.biglinks a {
+		font-size:900%;
+		line-height: 160px;
+	}
+	
+	#headerbox {
+		& span.mrfsa {
+			font-size:150%;
+		}
+		
+		& a.ss {
+			font-size:400%;
+		}
+	}
+	
+	#footer {
+		font-size: 16px !important;
 	}
 }
 

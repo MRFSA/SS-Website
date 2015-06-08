@@ -10,14 +10,12 @@
 <p><?php 
 foreach ($sponsors->sponsor as $currentsponsor) {
 	if ($currentsponsor['level']=="1") {
-		echo "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address</div>";
+		echo "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br /><a href='$currentsponsor->url'>$currentsponsor->linkname</a></div>";
 	}
-} ?>
-
-<?php
+}
 foreach ($sponsors->sponsor as $currentsponsor) {
 	if ($currentsponsor['level']=="2") {
-		echo "<div class='sponsor-lv2' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor[level]</div>";
+		echo "<div class='sponsor-lv2' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br /><a href='$currentsponsor->url'>$currentsponsor->linkname</a></div>";
 	}
 } ?>
 

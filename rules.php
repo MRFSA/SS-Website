@@ -5,7 +5,7 @@
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo $pagename . " " . $ssyear; ?></h1>
-<a href="files/rules<?php echo $sscode; ?>" class="<?php echo "$pagecolor"; ?> hideinprint">Download a (printer-friendly) PDF copy.</a>
+<a href="files/rules<?php echo $sscode; ?>.pdf" class="<?php echo "$pagecolor"; ?> hideinprint">Download a (printer-friendly) PDF copy.</a>
 <ol class="rules">
 	<li>The decision of the Mackenzie River Fish Stocking Association (MRFSA) is final, and the committee has the right to withhold any prizes, pending an investigation.</li>
 	<li><strong>Hours/Cutoff Times</strong>
