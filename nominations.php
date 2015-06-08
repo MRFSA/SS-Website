@@ -5,7 +5,7 @@
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo $pagename; ?></h1>
-<p><a href="/files/nomination<?php echo "$ssyear"; ?>.pdf" class="<?php echo "$pagecolor"; ?>">Download PDF Nomination Form</a></p>
+<p><a href="/files/nom<?php echo "$ssyear"; ?>.pdf" class="<?php echo "$pagecolor"; ?>">Download PDF Nomination Form</a></p>
 <p>By nominating for the Saratoga Spectacular 2015 you agree to follow the <a href="rules.php" class="red">rules of the competition</a>
 <h2>Ready to Nominate?</h2>
 Download the <a href="/files/nomination2015.pdf" class="<?php echo "$pagecolor"; ?>">nomination form</a>, print it out and fill in all your details, then mail it (along with your payment) to:<br />
