@@ -1,0 +1,45 @@
+<sponsors>
+	<sponsor level="1">
+		<name>Mitre 30</name>
+		<address>address</address>
+		<phone>(07) 49xx xxxx</phone>
+		<url></url>
+		<linkname></linkname>
+		<logo>images/SSV-cornerlogo.png</logo>
+	</sponsor>
+	
+	<sponsor level="2">
+		<name>Mitre 20</name>
+		<address></address>
+		<phone></phone>
+		<url></url>
+		<linkname></linkname>
+		<logo>images/SSV-logo2.png</logo>
+	</sponsor>
+	<sponsor level="2">
+		<name>Mitre 20</name>
+		<address></address>
+		<phone></phone>
+		<url></url>
+		<linkname></linkname>
+		<logo>images/MRFSA-cornerlogo.png</logo>
+	</sponsor>
+	
+	<sponsor level="3">
+		<name>WOAAAT</name>
+		<address></address>
+		<phone></phone>
+		<url></url>
+		<linkname></linkname>
+		<logo></logo>
+	</sponsor>
+	
+	<sponsor level="4">
+		<name>Mitre 20</name>
+		<address></address>
+		<phone></phone>
+		<url></url>
+		<linkname></linkname>
+		<logo></logo>
+	</sponsor>
+</sponsors>

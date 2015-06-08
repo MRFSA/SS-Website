@@ -205,29 +205,49 @@ div.biglinks {
 /* Numbered Lists */
 ol.rules {text-align:left;}
 ol { counter-reset: item }
-li { 
+ol > li { 
 	display: block;
 	&:before { content: counters(item, ".") ". "; counter-increment: item; font-weight:700; }
 }
 ol.rules span {
-font-weight:400;
+	font-weight:400;
+}
+ul {list-style-type: disc;}
+
+/* SPONSORS */
+.sponsor {
+	text-align:left;
+	margin:10px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10px 10px 10px 180px;
+	width:60%;
+	background-color:#eee;
+	background-size:170px;
+	background-repeat:no-repeat;
+	background-position: 3px 50% contain;
+}
+
+div.sponsor-lv1 {
+	box-shadow: 0px 0px 10px @orange;
+	border:1px solid @orange;
+	.sponsor();
+}
+
+div.sponsor-lv2 {
+	.sponsor();
+	background-color:@lightgray;
+}
+
+div.sponsor-lv3 {
+	clear:both;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
 }
 
 /*Responsive Design */
-@media only print {
-	body {
-		font-size:11px;
-		padding:0;
-	}
-	
-	#ss-cornerlogo, #mrfsa-cornerlogo {
-		display:none;
-	}
-	
-	.hideinprint {
-		display:none;
-	}
-}
 
 @media only screen and (max-width: 1200px) {
 	body {
@@ -237,7 +257,7 @@ font-weight:400;
 	a#ss-cornerlogo {
 		height: 141px;
 		width: 319px;
-		background-image:url('../images/SSV-Logo2.png');
+		background-image:url('../images/SSV-logo2.png');
 	}
 }
 
@@ -288,6 +308,16 @@ font-weight:400;
 		}
 		
 	}
+	
+	div.sponsor-lv1, div.sponsor-lv2 {
+		background-size: auto 90px;
+		background-position: 50% 3px;
+		padding:90px 10px 10px 10px;
+	}
+	
+	div.sponsor-lv3 {
+		font-size:13px;
+	}
 }
 
 @media only screen and (max-width:370px) {
@@ -303,4 +333,19 @@ font-weight:400;
 		font-size:50px;
 	}
 
+}
+
+@media only print {
+	body {
+		font-size:11px;
+		padding:0;
+	}
+	
+	#ss-cornerlogo, #mrfsa-cornerlogo {
+		display:none;
+	}
+	
+	.hideinprint {
+		display:none;
+	}
 }
