@@ -2,12 +2,12 @@
 	$pagename = "Our Sponsors";
 	require 'load/header.php';
 	$pagecolor = "orange";
-	
+
 	$sponsors = simplexml_load_file('load/sponsors.xml');
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo "$ssyear"; ?> Sponsors</h1>
-<p><?php 
+<p><?php
 foreach ($sponsors->sponsor as $currentsponsor) {
 	if ($currentsponsor['level']=="1") {
 		echo "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br /><a href='$currentsponsor->url'>$currentsponsor->linkname</a></div>";
@@ -24,7 +24,17 @@ foreach ($sponsors->sponsor as $currentsponsor) {
 		<?php
 		foreach ($sponsors->sponsor as $currentsponsor) {
 			if ($currentsponsor['level']=="3") {
-				echo "<li><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor[level]</li>";
+				echo "<li><strong>" . $currentsponsor->name . "</strong> ";
+				if ($currentsponsor->phone != ''){
+					echo "Ph: $currentsponsor->phone; ";
+				}
+				if ($currentsponsor->address != ''){
+					echo "$currentsponsor->address ";
+				}
+				if ($currentsponsor->url !=''){
+					echo "<a href='$currentsponsor->url'>$currentsponsor->linkname</a>";
+				}
+				echo "</li>";
 			}
 		} ?>
 	</ul>

@@ -81,7 +81,7 @@ a {
 		&.green 	{.bg-green();}
 		&.blue 		{.bg-blue();}
 	}
-	
+
 	&:hover, &:active {
 		background-color:#ffffff;
 		color:@darkgray;
@@ -105,32 +105,32 @@ a {
 	padding:6px;
 	margin: 20px 0 0 0;
 	border-top: 3px solid @pink;
-	
+
 	& a {
 		text-decoration:none;
-		
+
 		&:link, &:visited {
 			color:#fff;
 		}
-		
+
 		&:hover, &:active {
 			color:@darkgray;
 			background-color:#fff;
 		}
-		
+
 		&.jlx:link, &.jlx:visited{
 			color:@pink;
 		}
-		
+
 		&.jlx:hover, &.jlx:active {
 			color:@darkgray;
 			background-color:@pink;
 		}
-		
+
 		&.mrfsa:link, &.mrfsa:visited {
 			color:@orange;
 		}
-		
+
 		&.mrfsa:hover, &.mrfsa:active {
 			color:@darkgray;
 			background-color:@orange;
@@ -187,7 +187,7 @@ div.biglinks {
 		padding:15px 10px 0 10px;
 		line-height: 80px;
 		background-color:transparent;
-		
+
 		&:after {content:"\A";white-space:pre;}
 		&:nth-child(1):link, &:nth-child(1):visited {color:@purple;}
 		&:nth-child(2):link, &:nth-child(2):visited {color:@red;}
@@ -206,7 +206,7 @@ div.biglinks {
 /* Numbered Lists */
 ol.rules {text-align:left;}
 ol { counter-reset: item }
-ol > li { 
+ol > li {
 	display: block;
 	&:before { content: counters(item, ".") ". "; counter-increment: item; font-weight:700; }
 }
@@ -246,6 +246,7 @@ div.sponsor-lv3 {
 	margin-left:auto;
 	margin-right:auto;
 	text-align:left;
+  font-size:85%;
 }
 
 /*Responsive Design */
@@ -254,7 +255,7 @@ div.sponsor-lv3 {
 	body {
 		padding:140px 0 0 0;
 	}
-	
+
 	a#ss-cornerlogo {
 		height: 141px;
 		width: 319px;
@@ -267,11 +268,11 @@ div.sponsor-lv3 {
 		padding:90px 0 0 0;
 		font-size:14px;
 	}
-	
+
 	a#ss-cornerlogo, a#mrfsa-cornerlogo {
 		display:none;
 	}
-	
+
 	#headerbox {
 		display:block;
 		color:#fff;
@@ -281,11 +282,11 @@ div.sponsor-lv3 {
 		left:0;
 		width:100%;
 		z-index:5;
-		
+
 		& span.mrfsa {
 			font-weight:100;
 			font-size:10px;
-			
+
 			&a {
 				&:link, &:visited {
 					&:extend(a.ss:link);
@@ -295,7 +296,7 @@ div.sponsor-lv3 {
 				}
 			}
 		}
-		
+
 		& a.ss {
 			font-weight:700;
 			font-size:25px;
@@ -307,15 +308,15 @@ div.sponsor-lv3 {
 				opacity: 0.5;
 			}
 		}
-		
+
 	}
-	
+
 	div.sponsor-lv1, div.sponsor-lv2 {
 		background-size: auto 90px;
 		background-position: 50% 3px;
 		padding:90px 10px 10px 10px;
 	}
-	
+
 	div.sponsor-lv3 {
 		font-size:13px;
 	}
@@ -326,26 +327,26 @@ div.sponsor-lv3 {
 	body {
 		padding: 150px 0 0 0;
 	}
-	
+
 	h1 {
 		font-size:1000%;
 	}
-	
+
 	div.biglinks a {
 		font-size:900%;
 		line-height: 160px;
 	}
-	
+
 	#headerbox {
 		& span.mrfsa {
 			font-size:150%;
 		}
-		
+
 		& a.ss {
 			font-size:400%;
 		}
 	}
-	
+
 	#footer {
 		font-size: 16px;
 	}
@@ -355,11 +356,11 @@ div.sponsor-lv3 {
 	#headerbox a.ss {
 		font-size:22px;
 	}
-	
+
 	div.biglinks a {
 		font-size:45px;
 	}
-	
+
 	h1 {
 		font-size:50px;
 	}
@@ -371,11 +372,11 @@ div.sponsor-lv3 {
 		font-size:11px;
 		padding:0;
 	}
-	
+
 	#ss-cornerlogo, #mrfsa-cornerlogo {
 		display:none;
 	}
-	
+
 	.hideinprint {
 		display:none;
 	}

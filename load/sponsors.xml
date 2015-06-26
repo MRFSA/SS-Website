@@ -1,45 +1,52 @@
 <sponsors>
-	<sponsor level="1">
-		<name>Mitre 30</name>
-		<address>address</address>
-		<phone>(07) 49xx xxxx</phone>
-		<url></url>
-		<linkname></linkname>
-		<logo>images/SSV-cornerlogo.png</logo>
-	</sponsor>
-	
-	<sponsor level="2">
-		<name>Mitre 20</name>
-		<address></address>
-		<phone></phone>
-		<url></url>
-		<linkname></linkname>
-		<logo>images/SSV-logo2.png</logo>
-	</sponsor>
-	<sponsor level="2">
-		<name>Mitre 20</name>
-		<address></address>
-		<phone></phone>
-		<url></url>
-		<linkname></linkname>
-		<logo>images/MRFSA-cornerlogo.png</logo>
-	</sponsor>
-	
+
 	<sponsor level="3">
-		<name>WOAAAT</name>
-		<address></address>
-		<phone></phone>
+		<name>Mitre 10 Blackwater</name>
+		<address>4 Littlefield Street, Blackwater</address>
+		<phone>(07) 4986 1266</phone>
 		<url></url>
 		<linkname></linkname>
 		<logo></logo>
+		<amount>50</amount>
 	</sponsor>
-	
-	<sponsor level="4">
-		<name>Mitre 20</name>
+
+	<sponsor level="3">
+		<name>Black Diamond Motel</name>
+		<address>24 Railway Street, Blackwater</address>
+		<phone>(07) 4982 5944</phone>
+		<url>http://blackdiamondmotel.com.au</url>
+		<linkname>blackdiamondmotel.com.au</linkname>
+		<logo></logo>
+		<amount>100</amount>
+	</sponsor>
+
+	<sponsor level="3">
+		<name>Kleen Filter Service</name>
+		<address>13 Karri Street, Blackwater</address>
+		<phone>(07) 4982 5709</phone>
+		<url></url>
+		<linkname></linkname>
+		<logo></logo>
+		<amount>100</amount>
+	</sponsor>
+
+	<sponsor level="2">
+		<name>Chrisway Maintenance Service</name>
+		<address>14 Littlefield Street, Blackwater</address>
+		<phone>(07) 4982 7077</phone>
+		<url>http://www.chrisway.com.au</url>
+		<linkname>chrisway.com.au</linkname>
+		<logo></logo>
+		<amount>500</amount>
+	</sponsor>
+
+	<sponsor level="0">
+		<name></name>
 		<address></address>
 		<phone></phone>
 		<url></url>
 		<linkname></linkname>
 		<logo></logo>
+		<amount></amount>
 	</sponsor>
 </sponsors>
