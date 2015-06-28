@@ -1,8 +1,7 @@
 <?php
 	$pagename = "Our Sponsors";
-	require 'load/header.php';
 	$pagecolor = "orange";
-
+	require 'load/header.php';
 	$sponsors = simplexml_load_file('load/sponsors.xml');
 ?>
 

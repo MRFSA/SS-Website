@@ -1,7 +1,7 @@
 <?php
 	$pagename = "Contact Us";
-	require 'load/header.php';
 	$pagecolor = "blue";
+	require 'load/header.php';
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo $pagename; ?></h1>

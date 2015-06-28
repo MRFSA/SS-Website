@@ -1,7 +1,7 @@
 <?php
+	$pagecolor = "purple";
 	$pagename = "Nominations";
 	require 'load/header.php';
-	$pagecolor = "purple";
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo $pagename; ?></h1>

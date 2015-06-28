@@ -1,7 +1,7 @@
 <?php
 	$pagename = "The Rules";
-	require 'load/header.php';
 	$pagecolor = "red";
+	require 'load/header.php';
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo $pagename . " " . $ssyear; ?></h1>
@@ -82,8 +82,8 @@
 					The decision of which of the listed category a weighed-in fish should be registered to, if at all, is at the sole discretion of the MRFSA.
 				</ol>
 			</li>
-			
-		</ol>	
+
+		</ol>
 	</li>
 	<li><strong>Nominations</strong>
 		<ol>
@@ -114,7 +114,7 @@
 				<strong>Nomination Draws</strong><br />
 				Nomination Draws will be held for all nominated competitors on <?php echo date_format($ssSaturday,'l j F Y'); ?> (starting at 7:00pm) and <?php echo date_format($ssSunday,'l j F Y'); ?> (starting at 12 Midday). To be in the draw on either day, competitors must be nominated before the Nomination Tent closes on that day (per hours listed in <span>2.2</span>). Once their nomination number has been called, competitors will have <span>60 seconds</span> to present themselves (with their nomination card) to collect their prize. For major prizes (such as, but not limited to, the boat) MRFSA may ask for proof of ID before presenting the prize.<br />
 				Where a competitor does not present themselves <span>and</span> their nomination card within the given timeframe, the prize will redrawn for another competitor to claim.
-				<ol> 
+				<ol>
 					<li>
 						<strong>Early Bird Draw</strong><br />
 						To be eligible for the Early Bird Draw, competitors must have completed and submitted their nomination forms and payment before the cut-off date of <?php echo date_format($ssEarlyCutoff,'l j F Y'); ?> (or be postmarked on or before this dayte, for nominations submitted by post). The prize will be drawn on Saturday night, and competitors do not need to be present to collect this particular prize.
