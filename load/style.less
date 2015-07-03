@@ -218,7 +218,7 @@ ul {list-style-type: disc;}
 /* SPONSORS */
 .sponsor {
 	text-align:left;
-	margin:10px;
+	margin:15px;
 	margin-left:auto;
 	margin-right:auto;
 	padding: 10px 10px 10px 180px;
@@ -229,25 +229,33 @@ ul {list-style-type: disc;}
 	background-position: 0 50%;
 }
 
-div.sponsor-lv1 {
-	box-shadow: 0px 0px 10px @orange;
-	border:1px solid @orange;
-	.sponsor();
+div.sponsor {
+  &-lv0 {
+    .sponsor();
+    box-shadow: 0px 0px 20px @darkgray;
+    border:1px solid @darkgray;
+    background-color: @orange;
+    color:#ffffff;
+  }
+  &-lv1 {
+      .sponsor();
+    box-shadow: 0px 0px 10px @orange;
+    border:1px solid @orange;
+  }
+  &-lv2 {
+      .sponsor();
+    background-color:@lightgray;
+  }
+  &-lv3 {
+    clear:both;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    font-size:85%;
+  }
 }
 
-div.sponsor-lv2 {
-	.sponsor();
-	background-color:@lightgray;
-}
-
-div.sponsor-lv3 {
-	clear:both;
-	width:70%;
-	margin-left:auto;
-	margin-right:auto;
-	text-align:left;
-  font-size:85%;
-}
 
 /*Responsive Design */
 
@@ -311,7 +319,7 @@ div.sponsor-lv3 {
 
 	}
 
-	div.sponsor-lv1, div.sponsor-lv2 {
+	div.sponsor-lv0, div.sponsor-lv1, div.sponsor-lv2 {
 		background-size: auto 90px;
 		background-position: 50% 3px;
 		padding:90px 10px 10px 10px;

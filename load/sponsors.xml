@@ -1,4 +1,11 @@
 <sponsors>
+	<sponsor level="0">
+		<name>CFMEU Blackwater No.1 Lodge</name>
+		<url>http://www.cfmeuqld.asn.au/Contact/tabid/54/Default.aspx</url>
+		<linkname>cfmeuqld.asn.au</linkname>
+		<logo>images/sponsors/CFMEU.png</logo>
+		<amount>3200</amount>
+	</sponsor>
 
 	<sponsor level="3">
 		<name>Mitre 10 Blackwater</name>
@@ -40,7 +47,7 @@
 		<amount>500</amount>
 	</sponsor>
 
-	<sponsor level="0">
+	<sponsor level="-1">
 		<name></name>
 		<address></address>
 		<phone></phone>

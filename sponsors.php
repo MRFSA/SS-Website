@@ -6,7 +6,28 @@
 ?>
 
 <h1 class="<?php echo "col-$pagecolor"; ?>"><?php echo "$ssyear"; ?> Sponsors</h1>
-<p><?php
+<?php
+foreach ($sponsors->sponsor as $currentsponsor) {
+	if ($currentsponsor['level']=="0") {
+		echo "<div class='sponsor-lv0' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br />";
+		if($currentsponsor->url <> "") {
+			echo "<a href='$currentsponsor->url'>$currentsponsor->linkname</a>";
+		}
+		echo "</div>";
+	}
+}
+
+foreach ($sponsors->sponsor as $currentsponsor) {
+	if ($currentsponsor['level']=="1") {
+		$sponsoroutput = "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br />";
+		if($currentsponsor->url <> "") {
+			$sponsoroutput += "<a href='$currentsponsor->url'>$currentsponsor->linkname</a>";
+		}
+		$sponsoroutput += "</div>";
+		echo $sponsoroutput;
+	}
+}
+
 foreach ($sponsors->sponsor as $currentsponsor) {
 	if ($currentsponsor['level']=="1") {
 		echo "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br /><a href='$currentsponsor->url'>$currentsponsor->linkname</a></div>";
