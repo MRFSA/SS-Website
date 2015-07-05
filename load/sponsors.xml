@@ -7,6 +7,50 @@
 		<amount>3200</amount>
 	</sponsor>
 
+	<sponsor level="1">
+		<name>Cooee Bay Marine</name>
+		<address>49 Tanby Road, Yeppoon 4703</address>
+		<phone>(07) 4939 1675</phone>
+		<url>http://www.cooeebaymarine.com.au/</url>
+		<linkname>cooeebaymarine.com.au</linkname>
+		<logo>images/sponsors/cooeebay.png</logo>
+	</sponsor>
+
+	<sponsor level="1">
+		<name>Sea Breeze Marine</name>
+		<address>150 Scenic Highway, Lammermoor Q 4703</address>
+		<phone>(07) 4933 6366</phone>
+		<url>http://www.seabreezemarine.com.au/</url>
+		<linkname>seabreezemarine.com.au</linkname>
+		<logo>images/sponsors/seabreeze.png</logo>
+	</sponsor>
+
+	<sponsor level="1">
+		<name>BCF Emerald</name>
+		<address>Corner of Capricorn Highway and Codenwarra Road, Emerald 4720</address>
+		<phone>(07) 4987 4116</phone>
+		<url>http://www.bcf.com.au/store-locator/stores/bcf%20emerald.aspx?id=428</url>
+		<linkname>bcf.com.au</linkname>
+		<logo>images/sponsors/bcf.png</logo>
+	</sponsor>
+
+	<sponsor level="1">
+		<name>Yarrabee</name>
+		<url>http://www.yancoal.com.au/page/key-assets/mines/yarrabee/</url>
+		<linkname>yancoal.com.au</linkname>
+		<logo></logo>
+	</sponsor>
+
+	<sponsor level="3">
+		<name>Moore Eyes Blackwater</name>
+		<address>Town Centre</address>
+		<phone>(07) 4986 1222</phone>
+		<url>http://www.mooreeyes.com.au/index.html</url>
+		<linkname>mooreeyes.com.au</linkname>
+		<logo></logo>
+		<amount>290</amount>
+	</sponsor>
+
 	<sponsor level="3">
 		<name>Mitre 10 Blackwater</name>
 		<address>4 Littlefield Street, Blackwater</address>
@@ -43,8 +87,33 @@
 		<phone>(07) 4982 7077</phone>
 		<url>http://www.chrisway.com.au</url>
 		<linkname>chrisway.com.au</linkname>
-		<logo></logo>
+		<logo>images/sponsors/chrisway.png</logo>
 		<amount>500</amount>
+	</sponsor>
+
+	<sponsor level="2">
+		<name>Coates Hire Blackwater</name>
+		<address>8 Littlefield Street, Blackwater Q 4717</address>
+		<phone>(07) 4986 3600</phone>
+		<url>http://www.coateshire.com.au/</url>
+		<linkname>coateshire.com.au</linkname>
+		<logo>images/sponsors/coates.png</logo>
+	</sponsor>
+
+	<sponsor level="3">
+		<name>Blackwater Tyre Centre</name>
+		<address>3 Littlefield Street, Blackwater Q 4717</address>
+		<phone>(07) 4982 5000</phone>
+		<url>http://blackwatertyrecentre.com.au/</url>
+		<linkname>blackwatertyrecentre.com.au</linkname>
+	</sponsor>
+
+	<sponsor level="3">
+		<name>Blackwater Tilt &amp; Transport Service</name>
+		<address>10 Littlefield Street, Blackwater Q 4717</address>
+		<phone>(07) 4986 1660 / 0409 050 907</phone>
+		<url>http://www.bwtilttraytransportservices.com.au/</url>
+		<linkname>bwtilttraytransportservices.com.au</linkname>
 	</sponsor>
 
 	<sponsor level="-1">

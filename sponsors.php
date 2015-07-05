@@ -19,17 +19,6 @@ foreach ($sponsors->sponsor as $currentsponsor) {
 
 foreach ($sponsors->sponsor as $currentsponsor) {
 	if ($currentsponsor['level']=="1") {
-		$sponsoroutput = "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br />";
-		if($currentsponsor->url <> "") {
-			$sponsoroutput += "<a href='$currentsponsor->url'>$currentsponsor->linkname</a>";
-		}
-		$sponsoroutput += "</div>";
-		echo $sponsoroutput;
-	}
-}
-
-foreach ($sponsors->sponsor as $currentsponsor) {
-	if ($currentsponsor['level']=="1") {
 		echo "<div class='sponsor-lv1' style='background-image:url($currentsponsor->logo);'><strong>" . $currentsponsor->name . "</strong><br />$currentsponsor->address<br />$currentsponsor->phone<br /><a href='$currentsponsor->url'>$currentsponsor->linkname</a></div>";
 	}
 }

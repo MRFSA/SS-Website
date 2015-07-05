@@ -13,7 +13,7 @@ Download the <a href="/files/nomination2015.pdf" class="<?php echo "$pagecolor";
 And your nomination pack will be ready for you when you show up on the weekend of the competition</p>
 <p><strong>Alternatively</strong> you can just bring the form and payment along with you to the competition and nominate there (or fill one out when you get there, whatever works for you).</p>
 <h2>Early Bird</h2>
-<p>Don't forget: if you nominate before XX/Sep/2015 (recieved and paid - or postmarked), you go in the draw for an extra prize. The Early Bird prize will be drawn on the Saturday Night of the competition and you don't need to be there to collect it.</p>
+<p>Don't forget: if you nominate before <em><?php echo date_format($ssEarlyCutoff,'l j F Y'); ?></em> (recieved and paid - or postmarked), you go in the draw for an extra prize. The Early Bird prize will be drawn on the Saturday Night of the competition and you don't need to be there to collect it.</p>
 <?php
 	require 'load/footer.php';
 ?>

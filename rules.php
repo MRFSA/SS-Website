@@ -63,20 +63,20 @@
 						<strong>Length Categories</strong><br />
 						These species will be measured as their length determines the winner.
 							<ol>
-								<li><span>Barramundi</span> - scientific name here</li>
-								<li><span>Saratoga</span> - scientific name here</li>
-								<li><span>Black Bream</span> - scientific name here</li>
-								<li><span>Sleepy Cod</span> - scientific name here</li>
-								<li><span>Yellowbelly</span> - scientific name here</li>
-								<li><span>Eel Tailed Jewfish</span> - scientific name here</li>
+								<li><span>Barramundi</span> - Lates Calcarifer</li>
+								<li><span>Saratoga</span> (or <em>Southern Saratoga</em>) - Scleropages Leichardti</li>
+								<li><span>Black Bream</span> (or <em>Sooty Grunter</em>) - Hephaestus Fuliginosus</li>
+								<li><span>Sleepy Cod</span> - Oxyeleotris Lineolatus</li>
+								<li><span>Yellowbelly</span> (or <em>Golden Perch</em>)- Macquaria Ambigua</li>
+								<li><span>Eel Tailed Catfish</span> (or <em>Jewfish</em>) - Tandanus Tandanus</li>
 							</ol>
 					</li>
 					<li>
-						<strong>Lucky Categories</strong><br />
+						<strong>Lucky Draw Categories</strong><br />
 						These species will not be measured as their length has no bearing on the competition.
 							<ol>
-								<li><span>Red Claw</span> - scientific name here</li>
-								<li><span>Catfish</span> -scientific name here</li>
+								<li><span>Red Claw</span> - Cherax quadricarinatus</li>
+								<li><span>Catfish</span></li>
 							</ol>
 					</li>
 					The decision of which of the listed category a weighed-in fish should be registered to, if at all, is at the sole discretion of the MRFSA.
@@ -123,7 +123,7 @@
 			</li>
 			<li>
 				<strong>Fish Category Prizes</strong><br />
-				The competitor with the longest weighed-in fish in each fish category listed in <span>3.3.1</span> will recieve a prize. Prizes are awareded at the draws held at Midday on <?php echo date_format($ssSunday,'l j F Y'); ?>. There are separate categories for senior competitors and junior competitors in each Fish Category &mdash; competitors are only eligible for prizes within their age category. Competitors must present their nomination card to collect their prize. MRFSA may ask for proof of ID before handing over prizes.
+				The competitor with the longest weighed-in fish in each fish category listed in <span>3.3.1</span> will recieve a prize. Prizes are awarded at the draws held at Midday on <?php echo date_format($ssSunday,'l j F Y'); ?>. There are separate categories for senior competitors and junior competitors in each Fish Category &mdash; competitors are only eligible for prizes within their age category. Competitors must present their nomination card to collect their prize. MRFSA may ask for proof of ID before handing over prizes.
 				<ol>
 					<li>
 						<strong>Tied/Drawn Category</strong><br />
