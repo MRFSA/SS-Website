@@ -25,7 +25,7 @@
 		<logo>images/sponsors/seabreeze.png</logo>
 	</sponsor>
 
-	<sponsor level="1">
+	<sponsor level="2">
 		<name>BCF Emerald</name>
 		<address>Corner of Capricorn Highway and Codenwarra Road, Emerald 4720</address>
 		<phone>(07) 4987 4116</phone>
@@ -38,7 +38,25 @@
 		<name>Yarrabee</name>
 		<url>http://www.yancoal.com.au/page/key-assets/mines/yarrabee/</url>
 		<linkname>yancoal.com.au</linkname>
-		<logo></logo>
+		<logo>images/sponsors/yarrabee.png</logo>
+	</sponsor>
+	
+	<sponsor level="1">
+		<name>Barra Jacks Rockhampton</name>
+		<address>99 Denham Street, Rockhampton Q 4700</address>
+		<phone>(07) 4922 4833</phone>
+		<url>http://www.barrajacks.com.au/</url>
+		<linkname>barrajacks.com.au</linkname>
+		<logo>images/sponsors/barrajacks.png</logo>
+	</sponsor>
+	
+	<sponsor level="2">
+		<name>Blackwater Hotel Motel</name>
+		<address>16 Railway Street, Blackwater Q 4717</address>
+		<phone>(07) 4982 5133</phone>
+		<url>http://www.cqhg.com.au/accommodation/blackwater-hotel/</url>
+		<linkname>cqhg.com.au</linkname>
+		<logo>images/sponsors/blackwaterhotel.png</logo>
 	</sponsor>
 
 	<sponsor level="3">
@@ -115,6 +133,18 @@
 		<url>http://www.bwtilttraytransportservices.com.au/</url>
 		<linkname>bwtilttraytransportservices.com.au</linkname>
 	</sponsor>
+	
+	<sponsor level="3">
+		<name>Kate's Country Stitches</name>
+	</sponsor>
+	
+	<sponsor level="3">
+		<name>HosePro</name>
+		<address>6 Jarrah Street, Blackwater Q 4717</address>
+		<phone>(07) 4982 5893</phone>
+	</sponsor>
+	
+	
 
 	<sponsor level="-1">
 		<name></name>
