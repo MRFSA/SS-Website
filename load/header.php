@@ -71,5 +71,5 @@
 <a class="logo" id="mrfsa-cornerlogo" href="http://mrfsa.org.au">Presented by MRFSA</a>
 <div id="headerbox">
 	<span class="mrfsa"><a href="http://mrfsa.org.au">Mackenzie River Fish Stocking Association Inc.</a> Presents</span><br />
-	<a href="/ssv" class="ss">Saratoga Spectacular 2015</a>
+	<a href="/" class="ss">Saratoga Spectacular 2015</a>
 </div>
