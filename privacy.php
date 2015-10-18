@@ -35,7 +35,7 @@ If you do not feel comfortable providing any of these details to us (except for 
 <p>MRFSA and it's members will never pass the information you have provided to us except in the following situations:<br />
 Where you win a major prize or place in a fish category at the competition, we may publish your Name and Town of Origin on our website, and provide this information to local publications to publish><br />
 When we are legally obliged to give your information to a law enforcement agency, as stated in the <em>Australian Privacy Act 1988 (Cwth)</em></p>
-<p>The Australian Government can provide more information about your rights and our responsibilities for the privacy of your information at <a href="http://privacy.org.au">privacy.org.au</a>
+<p>The Australian Government can provide more information about your rights and our responsibilities for the privacy of your information at <a href="http://www.oaic.gov.au/" target="_blank">oaic.gov.au</a>
 
 <?php
 	require 'load/footer.php';
